@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+       
+        <title>My calculator</title>
+         <meta charset="utf-8"/>
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"/>
+    
+  
+        <style>
+          
+            body{
+                background: #000;
+            }
+    .codedeCalcul{
+    border: 1px inset #777;
+    margin: 30px auto;
+    width: auto;
+        background: #333;
+        border-radius: 20px;
+    text-align: center;
+    height: auto;
+}
+.codedeCalcul h1{
+    color: aliceblue;
+    background: #b10c12;
+    width:400px; ;
+    height: 60px;
+    line-height:   50px;
+    text-align: center;
+    font-size: 2.5em;
+    transition: 12s;
+    margin: 10px auto;
+    text-transform: capitalize;
+    border-style:inset;
+     border-radius: 6px;
+}
+.codedeCalcul button{
+    border-style:ridge red;
+    width: 250px;
+    height: 50px;
+    color: #ccc;
+    margin: 10px;
+    padding: 2px;
+    text-align: center; 
+    font-family: cursive;
+     font-family: cursive;
+    font-size: 1.5em;
+    border-radius: 10px;
+    background: #2b4548;
+}
+.codedeCalcul .input{
+    width:100%;
+    height:60px;
+    margin-bottom: 40px;
+   
+}
+            .input h3{
+                color: #ddd;
+                font-size: 2em;
+            }
+input 
+{
+     color:#0c1617;
+     margin: 0px auto;
+    text-align: center;
+    font-size: 1em;
+     font-family: cursive;
+     background: #eee;
+     border-style:double;
+    width:300px;
+     border-radius: 6px;
+     height: 50px;
+    box-shadow: 0px 10px 10px solid #ee9;
+}
+.codedeCalcul h2{
+    color: #0c1617;
+    background: #eee;
+    width: 300px;
+    font-family: cursive;
+    height: 60px;
+   border-style:inset;
+    border-radius: 6px;
+}
+            
+            .ttex div{
+                display:inline-flex;
+                
+            }
+         
+           
+
+#sortie{
+    width: 40%;
+    display: inline-flex;
+    height: auto;
+     color:  #b10c12;
+     background:  #123;
+    font-size: 25px;
+    font-family:fantasy;
+    padding: 10px;
+     background: #fff;
+    border-style:inset;
+     border-radius: 6px;
+    
+}
+        #Bienvenue{
+        padding: 10px;
+        width: auto;
+        color: #233;
+        background: #eee;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        font-size: 1.4em;
+        font-family: fantasy;
+        text-transform: uppercase;
+        box-shadow: 0px 10px 18px solid #f42;
+            }
+            
+            @media screen and (max-width: 900px){
+                
+    .codedeCalcul button{
+    border-style:ridge red;
+    width: 160px;
+    height: 40px;
+    color: #ccc;
+    text-align: center; 
+    font-family: cursive;
+    font-size: 1.1em;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #2b4548;
+}
+     input 
+{
+     color:#0c1617;
+     margin: 0px auto;
+    text-align: center;
+    font-size: 1em;
+     font-family: cursive;
+     background: #eee;
+     border-style:ridge;
+    width:220px;
+     border-radius: 6px;
+     height: 50px;
+    box-shadow: 0px 10px 10px solid #ee9;
+}           
+                
+                .input h3{
+                color: #ddd;
+                font-size: 1.5em;
+            }
+    .codedeCalcul h2{
+    color: #0c1617;
+    background: #eee;
+    width: 230px;
+    font-family: cursive;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 1.4em;
+    line-height: 40px;
+    border-style:inset;
+    border-radius: 6px;
+}
+            #sortie{
+    width: 80%;
+    display: inline-flex;
+    height: auto;
+     color: red;
+    font-size: 25px;
+    font-family:fantasy;
+     background: #fff;
+    border-style:inset;
+     border-radius: 6px;
+}
+            }
+        
+            nav{
+                height: 50px;;
+                width: 100%;
+                background: #eee;
+            }
+            nav a{
+                display: inline-flex;
+                list-style: none;
+                 color: #0c1617;
+                text-align: center;
+            }
+          
+            a{
+                text-decoration: none;
+            }
+            .fa{
+                width: 50px;
+                height: 50px;
+            }
+        </style>
+
+    </head>
+    <body>
+   <nav>
+          <a href="https://https://web.facebook.com/charly.gueu.9"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+         <a href="https://twitter.com/charles_gueu"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+         <a href="https://www.linkedin.com/in/charles-gueu-1919b6155/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+         <a href="https://www.instagram.com/decharly_dev/?hl=fr"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+       Mes comptes
+    </nav>
+        <div class="codedeCalcul">
+      <div class="A-propos">
+          <div id="Bienvenue"></div> 
+      </div>
+    <h1> Calculatrice</h1>
+    <div class="input">
+    <input type="text" id="premierNombre" placeholder="Entrer premier nombre ici...">
+    <input type="text" id="secondNombre" placeholder="Entrer Deuxième ici...">
+        <h3>choississez votre option de calcule dans ces options :</h3>
+    </div>
+    <br><br>
+    <div class="Auto">
+    <button  title='Faire addition de ces deux nombre' onClick="addition()">Additionner</button>
+    <button  title='Soustraire par' onClick="soustraction()">Soustraire</button>
+    <button  title='Multiplier par' onClick="multiplication()">Multiplier</button>
+    <button  title='Diviser par' onClick="division()">Diviser</button>
+    <button title='Le reste de la division' onClick="modulo()">Modulo</button>
+    <button title='puissance' onClick="exponentiation()">Exponentiation</button>
+    <br>
+    </div>
+              <div style='color: #ddd; padding: 10px;'>NB: Faire <em><strong>CTRL + R</strong></em> pour reprendre le calcule ! ou Actualise simplement la page</div>
+        <div class="ttex" align='center'>
+            <div>  <h2>resultat donne:</h2></div>
+          
+    <div id="sortie" align='center'>
+    </div>
+    </div>
+          
+    </div>
+
+    </div>
+    
+    <script>
+        // Activité
+// 1. Créer une calculatrice;
+// 2. Prendre la valeur des deux inputs en utilisant variable.value (similaire à variable.innerHTML) puis les réutiliser pour créer vos différentes fonctions (exemple : premierNombre.value/secondNombre.value);
+// 3. Créer une fonction pour chaque opérateur (+, -, *, /, %, **);
+// #. Pour convertir une chaine de caractères vers un nombre, utiliser 'Number' avant votre valeur (exemple : Number(premierNombre.value));
+// 4. Renvoyer le tout dans la page HTML sous le titre 'Résultats';
+// 5. Le code fera moins de 50 lignes.
+
+var sortie = document.getElementById("sortie");
+var premierNombre = document.getElementById("premierNombre");
+var secondNombre = document.getElementById("secondNombre");
+
+function addition() {
+    sortie.innerHTML += premierNombre.value + " + " + secondNombre.value + " = " + (Number(premierNombre.value) + Number(secondNombre.value)) + "<br><br>"
+}
+
+function soustraction() {
+    sortie.innerHTML += premierNombre.value + " - " + secondNombre.value + " = " + (Number(premierNombre.value) - Number(secondNombre.value)) + "<br><br>"
+}
+
+function multiplication() {
+    sortie.innerHTML += premierNombre.value + " x " + secondNombre.value + " = " + (Number(premierNombre.value) * Number(secondNombre.value)) + "<br><br>"
+}
+
+function division() {
+    sortie.innerHTML += premierNombre.value + " / " + secondNombre.value + " = " + (Number(premierNombre.value) / Number(secondNombre.value)) + "<br><br>"
+}
+
+function modulo() {
+    sortie.innerHTML += premierNombre.value + " % " + secondNombre.value + " = " + (Number(premierNombre.value) % Number(secondNombre.value)) + "<br><br>"
+}
+
+function exponentiation() {
+    sortie.innerHTML += premierNombre.value + " ** " + secondNombre.value + " = " + (Number(premierNombre.value) ** Number(secondNombre.value)) + "<br><br>"
+}
+      
+        
+        /*   Ecrire comme machine*/
+        
+         var myText = "Bienvenue a tous sur my Calculator, un petit projet fais en javascript"
+         var myArray = myText.split("");
+             var timeLooper;
+             function loop(){
+                 if(myArray.length > 0){
+                 document.getElementById("Bienvenue").innerHTML += myArray.shift();
+                 } else{
+                     clearTimeout(timeLooper);
+                 }
+                 timeLooper = setTimeout('loop()',50);
+             }
+           loop();
+//             $(document).ready(function(){
+//         $('.dropdown').hover(function(){
+//        $(this) .children('.sub-menu').slideDown( 100);
+//       },                 
+//        function() {
+//        $(this).children('.sub-menu').slideUp(80);
+//       }                               
+//        );
+//       });
+        </script>
+
+    </body>
+</html>
